@@ -84,24 +84,18 @@ section{
     color:#c40000;
 }
 
-/* GALLERY */
+/* GALLERY: EXACTLY 5 IMAGES PER ROW */
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    gap:15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 images per row */
+    gap: 15px;
 }
 
 .gallery img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:10px;
-}
-.gallery video{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:10px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 
@@ -132,47 +126,22 @@ button:hover{
     color:white;
 }
 
-/* MOBILE FIXES */
-/* MOBILE FIXES */
-@media (max-width:600px){
-    header{font-size:22px}
-    .hero{height:280px}
-    .hero h1{font-size:20px}
-
-    /* SERVICES IMPROVED */
-    .services{
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
-    }
-
-    .card{
-        width:100%;
-        max-width:350px;
-        text-align:left;
-        padding:18px;
-        border-left:5px solid #c40000;
-        border-top:none;
-        border-radius:12px;
-    }
-
-    .card h3{
-        font-size:18px;
-        margin-bottom:8px;
-    }
-
-    .card p{
-        font-size:14px;
-    }
-/* MOBILE ADJUST */
-@media (max-width:600px){
-    .gallery img,
-    .gallery video{
-        height:180px;
+/* MOBILE FIX: less columns on small screens */
+@media (max-width:1000px){
+    .gallery{
+        grid-template-columns: repeat(3, 1fr); /* 3 per row on medium screens */
     }
 }
 
+@media (max-width:600px){
+    .gallery{
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on mobile */
+    }
+    .gallery img{
+        height: 120px;
+    }
 }
+
 </style>
 </head>
 
@@ -223,9 +192,9 @@ button:hover{
         <img src="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/654865948_10242529891684107_241097328199676877_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=nAPdhZ32gX0Q7kNvwGHHTfb&_nc_oc=AdqMQmX4HHPndVgiJNCP6zGk4_mI90OTOpZ433tOEOnt0uIClfVH6rHgws7_hL4BFLY&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=v-rLPXH6O-OHaW4WqIxLgQ&_nc_ss=7a32e&oh=00_AfxcgmiGMny2bmIwr3LkbI-9UXPpAFdpxhERJpFR9R03lA&oe=69CDC872" alt="excavator">
         <img src="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/510432184_10238200310527284_8918354934923685837_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=UZSz1dT_N5cQ7kNvwFRMHHT&_nc_oc=AdphSt7DgT2GC8Cz36gjjGoYZsrs_FLzyOHOkJjOhYTaljYffPY-qptivMse4twGK88&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=_arq40DoGQpE8VMgmeQ8gQ&_nc_ss=7a32e&oh=00_Afy_ymJAPRPu-69cGiM1AD9WjmD8DK3LGvCA8KltLZ6ZfQ&oe=69CDD4F5" alt="construction">
         <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/657314698_10242533326889985_1976925428310033756_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=k5qd-hfLBlgQ7kNvwG4fAr6&_nc_oc=AdqGDvgojRBhHOwvJSy_kI36kuTVwfVzweInN0ATL8WtG4wsmqexQf8ZSzrfpK1sx_M&_nc_zt=23&_nc_ht=scontent-sof1-1.xx&_nc_gid=mwpcNf1f7QAqex1hyWtbxA&_nc_ss=7a32e&oh=00_Afxn5awI8uj2RkBAgXtSKXdMr97PWEJ8kNOKR_TD6gymRA&oe=69CDD493" alt="excavation">
-         <video controls>
-            <source src="c:\Users\oniaj\Downloads\vid1bgr.mp4" type="video/mp4">
-        </video>
+        <img src="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/545689414_10239350844089904_4633536226105982957_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=7b2446&_nc_ohc=nxitJ2cutoUQ7kNvwElOa5R&_nc_oc=Adqn1pYcQ2q051eF-DClUp7O2G59sfIl4Z1ZIfq4aawcZU1v4Z4-54QR4W5lRenV2LY&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=NBRFCjQmXZ6BPXUgoD3P2g&_nc_ss=7a32e&oh=00_AfyrNhdK1pAXP2oH3yj6JGblREFq3KKHz9IIZAwaPkDu8A&oe=69CE03B8" alt="excavation"> 
+        <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/527818516_10238880836660012_7041268311295711752_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=hepefxK9BxUQ7kNvwGfoTBF&_nc_oc=AdqaIUvxKKx06Of7BNqelFK4OPywGPM6FWaa0wxPFTobJxzuPf79zRwG4VXezlsXy9Y&_nc_zt=23&_nc_ht=scontent-sof1-1.xx&_nc_gid=AIushb4lHS9mB3kpxG8z2g&_nc_ss=7a32e&oh=00_AfxIDIzFmInl8sZH3Ipl-YoqUBEFg99m9WIl-yWWh1CMGA&oe=69CE0527" alt="excavation">
+        <img src="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/656002587_10242540155900706_8471673241000474419_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=T6huZG8Dv4AQ7kNvwFOYVdK&_nc_oc=AdruYO4QJYOyajFBF2tLAidMIlTV5ldLkr9PeBQEje60j23cK9GdML1ipazLn1zSxGA&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=mjqbJPu3odnZszec1UMg5g&_nc_ss=7a32e&oh=00_AfxRdz7Cl0a5ua_5WmDI3e28yRwPaJUWVRJSj7b5jST6ww&oe=69CE1DFB" alt="excavation">
     </div>
 </section>
 
