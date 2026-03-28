@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IBRA-A</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:white;
+    color:#222;
+}
+
+header{
+    background:#c40000;
+    color:white;
+    padding:18px;
+    text-align:center;
+    font-size:26px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    background:#900000;
+}
+
+nav a{
+    color:white;
+    padding:12px 16px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:white;
+    color:#c40000;
+}
+
+.hero{
+    background:url('https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/651371229_10242308123940052_2278299835425879729_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=kerZtJbwuJUQ7kNvwHExxCy&_nc_oc=Adqvs_AVpOF_LglmpM_wjT7S010lPAXQidWqlfJskrqYuqfqj28g08OMBFbYVMR9Wac&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=UyXMPz-3WwoO7QvhkeZMSA&_nc_ss=7a32e&oh=00_AfzGfcttcC-j1HT96lIVb14nIr19RgaSdgQaC-d0M3C1LA&oe=69CDDFC0') center/cover no-repeat;
+    height:350px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
+    font-size:28px;
+}
+
+section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.services{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:20px;
+    width:250px;
+    border-top:5px solid #c40000;
+    border-radius:10px;
+}
+
+.card h3{
+    color:#c40000;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.contact{
+    background:#c40000;
+    color:white;
+}
+
+footer{
+    background:#900000;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+button{
+    background:white;
+    color:#c40000;
+    border:none;
+    padding:10px 20px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#222;
+    color:white;
+}
+
+/* MOBILE FIXES */
+@media (max-width:600px){
+    header{font-size:22px}
+    .hero{height:280px}
+    .hero h1{font-size:20px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    IBRA-A 
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Fuqizimi i Projekteve Tuaja me Saktësi dhe Fortësi</h1>
+</div>
+
+<section id="services">
+    <h2>Serviset tona</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Gërmim</h3>
+            <p>Shërbime profesionale gërmimi dhe lëvizjeje dheu për të gjitha madhësitë e projekteve.</p>
+        </div>
+        <div class="card">
+            <h3>Pastrimi i tokës</h3>
+            <p>Pastrimi efikas i tokës për ndërtim dhe zhvillim</p>
+        </div>
+        <div class="card">
+            <h3>Hapja e kanaleve</h3>
+            <p>Zgjidhje precize për hapjen e kanaleve për shërbimet dhe infrastrukturën.</p>
+        </div>
+        <div class="card">
+            <h3>Prishje</h3>
+            <p>Shërbime të sigurta dhe të kontrolluara prishjeje</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Punimi jon</h2>
+    <div class="gallery">
+        <img src="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/509363957_10238180582314091_7650132875180193381_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=XPzafq0TaGgQ7kNvwGtQdc-&_nc_oc=Adqmt7HS_E7kfnnGRfMOH49zDMpn7cBY96rVrvCbuHxs5BLKAcj3dt0l0l78eA7gfOM&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=jRGOsukmblQwAHY0qZujkg&_nc_ss=7a32e&oh=00_AfzHYqYEZ-ifQk3wIZpVDgP4Sa74Ga457k4sB321hV8k1w&oe=69CDDC3E" alt="excavator">
+        <img src="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/654865948_10242529891684107_241097328199676877_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_ohc=nAPdhZ32gX0Q7kNvwGHHTfb&_nc_oc=AdqMQmX4HHPndVgiJNCP6zGk4_mI90OTOpZ433tOEOnt0uIClfVH6rHgws7_hL4BFLY&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=v-rLPXH6O-OHaW4WqIxLgQ&_nc_ss=7a32e&oh=00_AfxcgmiGMny2bmIwr3LkbI-9UXPpAFdpxhERJpFR9R03lA&oe=69CDC872" alt="excavator">
+        <img src="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/510432184_10238200310527284_8918354934923685837_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_ohc=UZSz1dT_N5cQ7kNvwFRMHHT&_nc_oc=AdphSt7DgT2GC8Cz36gjjGoYZsrs_FLzyOHOkJjOhYTaljYffPY-qptivMse4twGK88&_nc_zt=23&_nc_ht=scontent-sof1-2.xx&_nc_gid=_arq40DoGQpE8VMgmeQ8gQ&_nc_ss=7a32e&oh=00_Afy_ymJAPRPu-69cGiM1AD9WjmD8DK3LGvCA8KltLZ6ZfQ&oe=69CDD4F5" alt="construction">
+        <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/657314698_10242533326889985_1976925428310033756_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=7b2446&_nc_ohc=k5qd-hfLBlgQ7kNvwG4fAr6&_nc_oc=AdqGDvgojRBhHOwvJSy_kI36kuTVwfVzweInN0ATL8WtG4wsmqexQf8ZSzrfpK1sx_M&_nc_zt=23&_nc_ht=scontent-sof1-1.xx&_nc_gid=mwpcNf1f7QAqex1hyWtbxA&_nc_ss=7a32e&oh=00_Afxn5awI8uj2RkBAgXtSKXdMr97PWEJ8kNOKR_TD6gymRA&oe=69CDD493" alt="excavation">
+    </div>
+</section>
+
+<section id="about">
+    <h2>About IBRA-A</h2>
+    <p>IBRA-A është një kompani e besueshme ekskavatorësh që ofron shërbime të besueshme dhe me cilësi të lartë. Me pajisje të forta dhe operatorë me përvojë, ne sigurohemi që çdo projekt të përfundojë në mënyrë të sigurt dhe efikase.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Na Kontaktoni</h2>
+    <p>Phone: +383 48 302 740</p>
+    <p>Phone: +383 44 302 740</p>
+    <p>Email: info@ibraa.com</p>
+    <button onclick="alert('Do te kontaktojm se shpejti!')">Kërkoni një ofertë</button>
+</section>
+
+<footer>
+    © 2026 IBRA-A | All Rights Reserved
+</footer>
+
+</body>
+</html>
